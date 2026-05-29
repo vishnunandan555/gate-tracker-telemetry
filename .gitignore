@@ -1,0 +1,16 @@
+node_modules/
+.next/
+.env
+.env.local
+.vercel
+telemetry.db
+telemetry.db-journal
+telemetry.db-shm
+telemetry.db-wal
+*.db
+*.sqlite
+*.sqlite-journal
+coverage/
+dist/
+.DS_Store
+TELEMETRY.md
