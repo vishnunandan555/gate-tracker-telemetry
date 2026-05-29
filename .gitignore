@@ -14,3 +14,4 @@ coverage/
 dist/
 .DS_Store
 TELEMETRY.md
+.env*

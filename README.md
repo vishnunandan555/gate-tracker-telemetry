@@ -2,6 +2,8 @@
 
 Private telemetry dashboard and API for the Flutter app.
 
+Current status: the Vercel deployment is verified with Redis, the health endpoint is healthy, and ingest/stats are working.
+
 ## Deploy checklist
 
 ### Local
@@ -20,6 +22,8 @@ Private telemetry dashboard and API for the Flutter app.
 4. Link the Redis resource to the project.
 5. Set `DB_PROVIDER=redis` and `STATS_API_KEY=...`.
 6. Deploy.
+
+If you are rotating the dashboard key, use a long random secret and redeploy after the change.
 
 
 ### Vercel env vars
@@ -103,5 +107,6 @@ chmod +x test-telemetry.sh
 ## Notes
 
 - SQLite is local/self-hosted only.
-- Vercel should use Redis.
+- Vercel uses Official Redis for Vercel (Redis Cloud) and is already verified working.
 - Duplicate pings for the same token on the same UTC day are ignored.
+- Rotate `STATS_API_KEY` to a long random secret before treating the deployment as final.
