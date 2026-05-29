@@ -21,9 +21,17 @@ Private telemetry dashboard and API for the Flutter app.
 5. Set `DB_PROVIDER=redis` and `STATS_API_KEY=...`.
 6. Deploy.
 
+
 ### Vercel env vars
 
-Use the Redis vars provided by the linked service, for example:
+This project is intended to run with **Official Redis for Vercel (Redis Cloud)**. When you add the Redis integration Vercel will provide a connection URL. Common names you may see:
+
+```env
+REDIS_URL=redis://:<password>@<host>:<port>
+REDIS_TLS_URL=rediss://... # TLS over rediss
+```
+
+If your provider instead exposes an Upstash-style REST API, the app still supports the following names:
 
 ```env
 KV_REST_API_URL=
@@ -31,6 +39,9 @@ KV_REST_API_TOKEN=
 UPSTASH_REDIS_REST_URL=
 UPSTASH_REDIS_REST_TOKEN=
 ```
+
+For official setup guidance see Redis Cloud's Vercel integration docs:
+https://redis.io/docs/latest/operate/rc/cloud-integrations/vercel/
 
 ## What the app exposes
 

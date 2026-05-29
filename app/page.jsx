@@ -208,7 +208,7 @@ export default function DashboardPage() {
                 </li>
                 <li>
                   <span className="dot" aria-hidden="true" />
-                  <span>The same app works locally with SQLite and on Vercel with Upstash Redis or Vercel KV.</span>
+                  <span>The same app works locally with SQLite and on Vercel with Official Redis for Vercel (Redis Cloud).</span>
                 </li>
                 <li>
                   <span className="dot" aria-hidden="true" />
@@ -248,7 +248,7 @@ export default function DashboardPage() {
                 <div className="hint-grid">
                   <div className="hint-card">
                     <strong>Vercel hosting</strong>
-                    <span className="subtle">Use Vercel KV or Upstash Redis for production. SQLite is for local/self-hosted only.</span>
+                    <span className="subtle">Use Official Redis for Vercel (Redis Cloud) for production. SQLite is for local/self-hosted only.</span>
                   </div>
                   <div className="hint-card">
                     <strong>Public ingest</strong>

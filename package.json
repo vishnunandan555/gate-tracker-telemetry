@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@upstash/redis": "^1.35.5",
+    "ioredis": "^5.3.2",
     "better-sqlite3": "^11.8.1",
     "next": "^15.3.2",
     "react": "^19.1.0",
